@@ -1,6 +1,6 @@
 import{ Fragment } from 'react'
 
-const ContactPage = ({keys,dalet}) => {
+const ContactPage = ({keys}) => {
     
   return (
     <Fragment>
@@ -16,7 +16,7 @@ const ContactPage = ({keys,dalet}) => {
                 </h1>
                <div className='w-full flex justify-around'>
                <button className='button-3'>edit</button>
-                <button onClick={dalet(e.id)} className='button-42'>dalet</button>
+                <button className='button-42'>dalet</button>
                </div>
             </div>
         ))

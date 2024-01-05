@@ -27,13 +27,7 @@ function App() {
     setTru(true)  
     console.log(localStorage.getItem("mal"));
   }
-  let dalet=(id)=>{
-    if(values.id===id){
-      setVal((prev)=>{
-        return prev.unshift()
-      })
-    }
-  }
+  
   return (
     <Fragment>
      <div className="container flex items-center justify-evenly">
@@ -52,7 +46,7 @@ function App() {
      </div>
      <span className=' inline-block w-full h-0 mb-7 mt-7 border-2 border-black'></span>
      <div className="container">
-     {tru ? <ContactPage keys={values}/>:  <ContactPage keys={values} dalet={dalet}/>}
+     {tru ? <ContactPage keys={values}/>:  <ContactPage keys={values}/>}
      </div>
     </Fragment>
   )
